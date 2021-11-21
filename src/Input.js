@@ -1,7 +1,8 @@
+import { InputDefault } from "./Input.styles"
+
 const Input = () => (
     <div>
-        <label for=""></label>
-        <input type="text" />
+        <InputDefault placeholder="Placeholder" />
     </div>
 )
 
