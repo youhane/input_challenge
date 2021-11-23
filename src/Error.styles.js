@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const InputDefault = styled.div`
+export const Error = styled.div`
     display: flex;
     flex-direction: column;
     width: 15rem;
@@ -8,7 +8,7 @@ export const InputDefault = styled.div`
     input{
         padding: 1rem;
         border-style: solid;
-        border-color: #828282;
+        border-color: red;
         border-radius: 10px;
         outline: none;
     }
@@ -17,11 +17,11 @@ export const InputDefault = styled.div`
         border-color: #333333;
     }
 
-    input:focus, input:active {
-        border-color: #2962FF;
+    input:hover + label{
+        color: #333333 !important;
     }
 
-    input:active + label{
-        color: #2926FF;
+    label{
+        color: red;
     }
 `
