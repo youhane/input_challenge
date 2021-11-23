@@ -1,9 +1,12 @@
-import { InputDefault } from "./Input.styles"
+import { InputDefault } from "./Default.styles"
 
 const Input = () => (
     <div>
-        <InputDefault placeholder="Placeholder" />
-    </div>
+        <InputDefault>
+            <label>Label</label>
+            <input placeholder="Placeholder" />
+        </InputDefault>
+    </div >
 )
 
 export default Input;
