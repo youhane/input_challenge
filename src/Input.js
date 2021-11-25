@@ -7,10 +7,11 @@ import { IconInput } from "./IconInput.styles";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faUserLock } from '@fortawesome/free-solid-svg-icons';
+import { InputSize } from "./Size.styles";
 
 library.add(faPhone, faUserLock)
 
-const Input = ({ helperText, iconStart, iconEnd }) => (
+const Input = ({ helperText, iconStart, iconEnd, size }) => (
     <div>
         <InputDefault>
             <label>
@@ -66,6 +67,13 @@ const Input = ({ helperText, iconStart, iconEnd }) => (
                 <input type={"text"} placeholder="Placeholder" value="Text" />
             </label>
         </InputDefault>
+        <InputSize size={size}>
+            <label>
+                Label
+                <br></br>
+                <input type={"text"} placeholder="Placeholder" />
+            </label>
+        </InputSize>
     </div>
 )
 

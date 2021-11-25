@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InputSize = styled.div`
     input{
         border-color: #828282;
-        padding: ${props => props.iconStart === "sm" ? "1rem 1rem" : "1rem 0rem"};
+        padding: ${props => props.size === "sm" ? '.5rem' : props.size === "md" ? '1rem' : '1rem'}
     }
 
     input:hover{
