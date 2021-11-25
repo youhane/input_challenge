@@ -60,6 +60,12 @@ const Input = ({ helperText, iconStart, iconEnd }) => (
                 </div>
             </label>
         </IconInput>
+        <InputDefault>
+            <label>
+                Label
+                <input type={"text"} placeholder="Placeholder" value="Text" />
+            </label>
+        </InputDefault>
     </div>
 )
 
