@@ -1,5 +1,6 @@
 import { InputDefault } from "./Default.styles"
-import { Error } from "./Error.styles"
+import { DisabledInput } from "./Disabled.styles";
+import { ErrorInput } from "./Error.styles"
 
 const Input = () => (
     <div>
@@ -9,13 +10,19 @@ const Input = () => (
                 <input type={"text"} placeholder="Placeholder" />
             </label>
         </InputDefault>
-        <Error>
+        <ErrorInput>
             <label>
                 Label
                 <input type={"text"} placeholder="Placeholder" />
             </label>
-        </Error>
-    </div >
+        </ErrorInput>
+        <DisabledInput>
+            <label>
+                Label
+            </label>
+            <input type={"text"} placeholder="Placeholder" />
+        </DisabledInput>
+    </div>
 )
 
 export default Input;

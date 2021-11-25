@@ -1,16 +1,8 @@
 import styled from "styled-components";
 
-export const Error = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 15rem;
-
+export const ErrorInput = styled.div`
     input{
-        padding: 1rem;
-        border-style: solid;
         border-color: red;
-        border-radius: 10px;
-        outline: none;
     }
 
     input:hover{
