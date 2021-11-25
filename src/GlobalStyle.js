@@ -13,9 +13,9 @@ export const GlobalStyle = createGlobalStyle`
                 flex-direction: column;
                 width: 15rem;
         }
-        input{
+        input, textarea{
                 padding: 1rem;
-                border-style: solid;
+                border: 3px solid;
                 border-radius: 10px;
                 outline: none;
         }
