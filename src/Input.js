@@ -2,7 +2,7 @@ import { InputDefault } from "./Default.styles"
 import { DisabledInput } from "./Disabled.styles";
 import { ErrorInput } from "./Error.styles"
 
-const Input = () => (
+const Input = ({ helperText }) => (
     <div>
         <InputDefault>
             <label>
@@ -19,9 +19,17 @@ const Input = () => (
         <DisabledInput>
             <label>
                 Label
+                <input type={"text"} placeholder="Placeholder" />
             </label>
-            <input type={"text"} placeholder="Placeholder" />
         </DisabledInput>
+        <InputDefault>
+            <label>
+                Label
+                <input type={"text"} placeholder="Placeholder" />
+                <br></br>
+                <span>{helperText}</span>
+            </label>
+        </InputDefault>
     </div>
 )
 

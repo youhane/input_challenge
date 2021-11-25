@@ -16,4 +16,8 @@ export const InputDefault = styled.div`
     input:active + label{
         color: #2926FF;
     }
+
+    span{
+        font-size: .8rem;
+    }
 `
