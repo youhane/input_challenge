@@ -11,7 +11,7 @@ import { InputSize } from "./Size.styles";
 
 library.add(faPhone, faUserLock)
 
-const Input = ({ helperText, iconStart, iconEnd, size }) => (
+const Input = ({ helperText, iconStart, iconEnd, size, fullWidth }) => (
     <div>
         <InputDefault>
             <label>
@@ -74,6 +74,13 @@ const Input = ({ helperText, iconStart, iconEnd, size }) => (
                 <input type={"text"} placeholder="Placeholder" />
             </label>
         </InputSize>
+        <InputDefault fullWidth>
+            <label>
+                Label
+                <br></br>
+                <input type={"text"} placeholder="Placeholder" />
+            </label>
+        </InputDefault>
     </div>
 )
 
