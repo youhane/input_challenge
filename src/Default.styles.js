@@ -21,4 +21,8 @@ export const InputDefault = styled.div`
     span{
         font-size: .8rem;
     }
+
+    textarea{
+        resize: none;
+    }
 `
